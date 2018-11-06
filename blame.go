@@ -11,7 +11,7 @@ import (
 
 	log "github.com/Sirupsen/logrus"
 
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
 )
 
 type Blame struct {

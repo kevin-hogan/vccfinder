@@ -10,7 +10,7 @@ import (
 
 	lru "github.com/hashicorp/golang-lru"
 	"github.com/juju/utils/set"
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
 )
 
 type ChangeStatistic struct {

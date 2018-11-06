@@ -1,7 +1,7 @@
 package main
 
 import "testing"
-import "github.com/libgit2/git2go"
+import "gopkg.in/libgit2/git2go.v25"
 
 /*
 func TestFunctionsForFile(t *testing.T) {

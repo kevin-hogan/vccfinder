@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
 )
 
 type Tool struct {

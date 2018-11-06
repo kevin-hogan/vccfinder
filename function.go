@@ -1,7 +1,7 @@
 package main
 
-// #cgo LDFLAGS: -lclang
-// #cgo CFLAGS: -std=c11
+// #cgo LDFLAGS: -lclang-3.8
+// #cgo CFLAGS: -std=c11 -I /usr/lib/llvm-3.8/include/
 // #include <stdlib.h>
 // #include <errno.h>
 // #include "function.h"
@@ -13,7 +13,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
 	"github.com/sbinet/go-clang"
 )
 

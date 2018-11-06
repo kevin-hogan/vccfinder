@@ -10,12 +10,12 @@ import (
 	log "github.com/Sirupsen/logrus"
 	"github.com/google/go-github/github"
 	"github.com/lib/pq/hstore"
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
 
 	"time"
 
-	"tools.net.cs.uni-bonn.de/social-aspects-of-vulnerabilities/github-data/ds"
-	"tools.net.cs.uni-bonn.de/social-aspects-of-vulnerabilities/github-data/tools"
+	"vccfinder/ds"
+	"vccfinder/tools"
 )
 
 var (

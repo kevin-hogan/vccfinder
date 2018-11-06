@@ -19,7 +19,8 @@ import (
 	"time"
 
 	"github.com/google/go-github/github"
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
+	"golang.org/x/net/context"
 )
 
 type Repository struct {
@@ -432,7 +433,7 @@ func AddRepository(reponame string) error {
 	if err != nil {
 		return fmt.Errorf("connecting to github: %v", err)
 	}
-	res, err := ghClient.Do(req, r)
+	res, err := ghClient.Do(context.Background(), req, r)
 	if err != nil {
 		return fmt.Errorf("retrieving repo from github: %v %v %v", req, res, err)
 	}

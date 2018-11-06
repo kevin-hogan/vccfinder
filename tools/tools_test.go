@@ -3,7 +3,7 @@ package tools
 import (
 	"testing"
 
-	"github.com/libgit2/git2go"
+	"gopkg.in/libgit2/git2go.v25"
 )
 
 func TestAnalyzeFlawfinder(t *testing.T) {
